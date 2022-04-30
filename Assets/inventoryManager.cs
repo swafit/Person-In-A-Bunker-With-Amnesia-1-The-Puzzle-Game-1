@@ -18,7 +18,7 @@ public class inventoryManager : MonoBehaviour
     public static bool item6 { get; set; }
     public static bool item7 { get; set; }
 
-   
+    
 
     // Start is called before the first frame update
     void Start()
@@ -85,17 +85,22 @@ public class inventoryManager : MonoBehaviour
     
     public void HealthShot()
     {
-        item1 = !item1;
+
+       item1 = !item1;
+        
     }
     
     public void CableUse()
     {
+
         item2 = !item2;
+
     }
 
     public void CircuitUse()
     {
         item3 = !item3;
+   
     }
 
     public void WireUse()
