@@ -57,7 +57,9 @@
     <Compile Include="Assets\inventoryManager.cs" />
     <Compile Include="Assets\playerInfo.cs" />
     <Compile Include="Assets\optionsMenuScript.cs" />
-    <Compile Include="Assets\Scenes\NewBehaviourScript.cs" />
+    <Compile Include="Assets\pressurePlateScript.cs" />
+    <Compile Include="Assets\movePlayer.cs" />
+    <Compile Include="Assets\level1ManagerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
