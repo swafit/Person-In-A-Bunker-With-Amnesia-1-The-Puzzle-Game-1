@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 66ba9d0e122ce8144ab2a46964d7e0b0
+guid: bd3fbbafad0ffac46ab52fbb719620c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3596788259327797893
-    second: Final Proj Sprite Sheet_0
+      213: 4032892358237026260
+    second: spriteGame2_0
   - first:
-      213: -491559727210376919
-    second: Final Proj Sprite Sheet_1
+      213: 8007053660574971174
+    second: spriteGame2_1
   - first:
-      213: 158938189451598612
-    second: Final Proj Sprite Sheet_2
+      213: -9078778333662394135
+    second: spriteGame2_2
   - first:
-      213: -6260327575006195641
-    second: Final Proj Sprite Sheet_3
-  - first:
-      213: -6087978351352960545
-    second: Final Proj Sprite Sheet_4
-  - first:
-      213: 2452524466978648571
-    second: Final Proj Sprite Sheet_5
-  - first:
-      213: 8587774451054421248
-    second: Final Proj Sprite Sheet_6
-  - first:
-      213: -1381109176713742250
-    second: Final Proj Sprite Sheet_7
+      213: 6877044089963307316
+    second: spriteGame2_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Final Proj Sprite Sheet_0
+      name: spriteGame2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58a67818ddb5ae130800000000000000
-      internalID: 3596788259327797893
+      spriteID: 4d7fa1e8b36b7f730800000000000000
+      internalID: 4032892358237026260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Final Proj Sprite Sheet_1
+      name: spriteGame2_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,62 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 921dcb15801ad29f0800000000000000
-      internalID: -491559727210376919
+      spriteID: 625ff0091e4ce1f60800000000000000
+      internalID: 8007053660574971174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Final Proj Sprite Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41b9183f079a43200800000000000000
-      internalID: 158938189451598612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Final Proj Sprite Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7405c2a3d39de19a0800000000000000
-      internalID: -6260327575006195641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Final Proj Sprite Sheet_4
+      name: spriteGame2_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd9a657e1f7238ba0800000000000000
-      internalID: -6087978351352960545
+      spriteID: 9e84a8bf433b10280800000000000000
+      internalID: -9078778333662394135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Final Proj Sprite Sheet_5
+      name: spriteGame2_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,50 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf17739320e190220800000000000000
-      internalID: 2452524466978648571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Final Proj Sprite Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 005264efc57ed2770800000000000000
-      internalID: 8587774451054421248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Final Proj Sprite Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 658f1fd658055dce0800000000000000
-      internalID: -1381109176713742250
+      spriteID: 43166f6e92b207f50800000000000000
+      internalID: 6877044089963307316
       vertices: []
       indices: 
       edges: []
