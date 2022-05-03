@@ -57,11 +57,13 @@
     <Compile Include="Assets\inventoryManager.cs" />
     <Compile Include="Assets\level1ManagerScript.cs" />
     <Compile Include="Assets\pressurePlateScript.cs" />
+    <Compile Include="Assets\level2ManagerScript.cs" />
     <Compile Include="Assets\playerInfo.cs" />
     <Compile Include="Assets\movePlayer.cs" />
-    <Compile Include="Assets\optionsMenuScript.cs" />
     <Compile Include="Assets\cableGenScript.cs" />
-    <Compile Include="Assets\level2ManagerScript.cs" />
+    <Compile Include="Assets\optionsMenuScript.cs" />
+    <Compile Include="Assets\wireGenScript.cs" />
+    <Compile Include="Assets\circuitGenScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

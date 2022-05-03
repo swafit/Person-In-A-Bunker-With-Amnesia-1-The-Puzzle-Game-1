@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cableGenScript : MonoBehaviour
+public class wireGenScript : MonoBehaviour
 {
 
-    public static bool isCableUsed { get; set; }
+
+    public static bool isWireUsed { get; set; }
     public static string inTriggerObj { get; set; }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -13,12 +14,12 @@ public class cableGenScript : MonoBehaviour
         inTriggerObj = "Player";
         if (collision.tag == "Player")
         {
-            //Debug.Log(isCableUsed);
+            Debug.Log(isWireUsed);
 
-            if (isCableUsed)
+            if (isWireUsed)
             {
                 level2ManagerScript.checkGenWorking++;
-                isCableUsed = false;
+                isWireUsed = false;
             }
         }
 
@@ -29,7 +30,7 @@ public class cableGenScript : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             Debug.Log("Item Added");
-            inventoryManager.item2 = true;
+            inventoryManager.item4 = true;
             Destroy(this.transform.gameObject);
         }
     }
@@ -43,10 +44,10 @@ public class cableGenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        
     }
 
-    void FixedUpdate()
+     void FixedUpdate()
     {
         inTriggerObj = "";
     }

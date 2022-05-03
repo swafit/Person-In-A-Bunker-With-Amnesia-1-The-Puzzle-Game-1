@@ -7,6 +7,7 @@ public class level2ManagerScript : MonoBehaviour
 {
 
     public static int checkGenWorking { get; set; }
+   
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +18,12 @@ public class level2ManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(checkGenWorking);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (checkGenWorking <= 3)
+        if (checkGenWorking >= 3)
         {
             SceneManager.LoadScene("FinalLevel");
         }

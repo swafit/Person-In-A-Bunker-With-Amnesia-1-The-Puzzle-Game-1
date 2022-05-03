@@ -29,7 +29,7 @@ public class inventoryManager : MonoBehaviour
     void Start()
     {
         item1 = true;
-        item4 = true;
+    
         inventoryCanvas.enabled = false;
     }
 
@@ -109,15 +109,26 @@ public class inventoryManager : MonoBehaviour
 
     public void CircuitUse()
     {
-        item3 = !item3;
-   
+        if (item3 && circuitGenScript.inTriggerObj == "Player")
+        {
+            circuitGenScript.isCircuitUsed = true;
+            //Debug.Log(cableGenScript.isCableUsed);
+            item3 = false;
+        }
+
     }
 
     public void WireUse()
     {
-        item4 = !item4;
+        if (item4 && wireGenScript.inTriggerObj == "Player")
+        {
+            wireGenScript.isWireUsed = true;
+            //Debug.Log(cableGenScript.isCableUsed);
+            item4 = false;
+        }
+
     }
-    
+
     public void NoteUse1()
     {
         item5 = !item5;
