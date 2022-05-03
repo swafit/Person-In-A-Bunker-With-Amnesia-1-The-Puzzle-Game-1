@@ -18,20 +18,26 @@ public class inventoryManager : MonoBehaviour
     public static bool item6 { get; set; }
     public static bool item7 { get; set; }
 
-    
+    private bool isInventory = true;
+
+
+    [SerializeField]
+    Canvas inventoryCanvas;
+
 
     // Start is called before the first frame update
     void Start()
     {
         item1 = true;
         item4 = true;
+        inventoryCanvas.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
 
+        showInventory();
         updateList();
         updateColors();
         playerInfo.Inventory = items.ToList();
@@ -75,7 +81,7 @@ public class inventoryManager : MonoBehaviour
                     {
                     
                         GameObject go = GameObject.FindGameObjectsWithTag("Item" + y.ToString()).First();
-                        Debug.Log(go.name);
+                        //Debug.Log(go.name);
                         go.GetComponent<Text>().color = Color.cyan;
 
                     }
@@ -92,9 +98,13 @@ public class inventoryManager : MonoBehaviour
     
     public void CableUse()
     {
-
-        item2 = !item2;
-
+        if (item2 && cableGenScript.inTriggerObj == "Player")
+        {
+            cableGenScript.isCableUsed = true;
+            //Debug.Log(cableGenScript.isCableUsed);
+            item2 = false;
+        }
+       
     }
 
     public void CircuitUse()
@@ -121,6 +131,15 @@ public class inventoryManager : MonoBehaviour
     public void NoteUse3()
     {
         item7 = !item7;
+    }
+
+    void showInventory()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            inventoryCanvas.enabled = isInventory;
+            isInventory = !isInventory;
+        }
     }
 
 

@@ -759,8 +759,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1852118935}
   m_HandleRect: {fileID: 1852118934}
   m_Direction: 2
-  m_Value: -0.00001771134
-  m_Size: 0.53025115
+  m_Value: -0.000017807082
+  m_Size: 0.5302512
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2420,7 +2420,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 22
   m_TargetDisplay: 0
 --- !u!224 &416348641
 RectTransform:
@@ -5300,8 +5300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -129, y: 60}
-  m_SizeDelta: {x: 64.35, y: 37.77}
+  m_AnchoredPosition: {x: -198.44, y: 89.15}
+  m_SizeDelta: {x: 18.06, y: 18.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1111595029
 GameObject:
@@ -5594,7 +5594,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 21
   m_TargetDisplay: 0
 --- !u!224 &1119752923
 RectTransform:
@@ -5629,6 +5629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: 00000000000000
+  inventoryCanvas: {fileID: 1119752922}
 --- !u!1 &1137533839
 GameObject:
   m_ObjectHideFlags: 0

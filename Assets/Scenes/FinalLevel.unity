@@ -2385,6 +2385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: 00000000000000
+  inventoryCanvas: {fileID: 1083032286}
 --- !u!114 &1083032284
 MonoBehaviour:
   m_ObjectHideFlags: 0
