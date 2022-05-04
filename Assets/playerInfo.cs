@@ -14,7 +14,8 @@ public class playerInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Health = 3;
+        Health = 2;
+    
     }
 
     // Update is called once per frame

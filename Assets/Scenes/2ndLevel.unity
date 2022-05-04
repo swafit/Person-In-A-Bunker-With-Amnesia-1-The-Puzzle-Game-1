@@ -2823,6 +2823,7 @@ GameObject:
   - component: {fileID: 652275215}
   - component: {fileID: 652275217}
   - component: {fileID: 652275218}
+  - component: {fileID: 652275219}
   m_Layer: 0
   m_Name: Cable
   m_TagString: Untagged
@@ -2889,7 +2890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652275214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.46, y: 0.47, z: 0}
+  m_LocalPosition: {x: 3.92, y: -0.99, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2923,6 +2924,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066b7b389c0869541b70771a796d55e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &652275219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652275214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc86ce052f3ce641a9aadf2b9e4de6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  addedText: {fileID: 524352103}
 --- !u!1 &666535387
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,16 +54,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\orderInventory.cs" />
+    <Compile Include="Assets\tutorialScripts.cs" />
     <Compile Include="Assets\inventoryManager.cs" />
+    <Compile Include="Assets\pickUpHealthScript.cs" />
     <Compile Include="Assets\level1ManagerScript.cs" />
     <Compile Include="Assets\pressurePlateScript.cs" />
+    <Compile Include="Assets\wireGenScript.cs" />
     <Compile Include="Assets\level2ManagerScript.cs" />
     <Compile Include="Assets\playerInfo.cs" />
     <Compile Include="Assets\movePlayer.cs" />
     <Compile Include="Assets\cableGenScript.cs" />
-    <Compile Include="Assets\optionsMenuScript.cs" />
-    <Compile Include="Assets\wireGenScript.cs" />
     <Compile Include="Assets\circuitGenScript.cs" />
+    <Compile Include="Assets\optionsMenuScript.cs" />
+    <Compile Include="Assets\addingItemScirpt.cs" />
+    <Compile Include="Assets\tutorialManagerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

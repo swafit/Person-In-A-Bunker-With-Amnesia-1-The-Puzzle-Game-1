@@ -28,8 +28,7 @@ public class inventoryManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        item1 = true;
-    
+   
         inventoryCanvas.enabled = false;
     }
 
@@ -91,8 +90,12 @@ public class inventoryManager : MonoBehaviour
     
     public void HealthShot()
     {
-
-       item1 = !item1;
+        if (item1 && playerInfo.Health < 3)
+        {
+            playerInfo.Health++;
+            Debug.Log(playerInfo.Health);
+            item1 = false;
+        }
         
     }
     
