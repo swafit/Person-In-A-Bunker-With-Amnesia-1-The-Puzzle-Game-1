@@ -5,15 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class optionsMenuScript : MonoBehaviour
+public class mainMenuScript : MonoBehaviour
 {
-
-    [SerializeField]
-    Canvas canvas;
-
-    [SerializeField]
-    List<GameObject> boxes;
-    
 
     [SerializeField]
     Toggle toggleSound;
@@ -21,73 +14,39 @@ public class optionsMenuScript : MonoBehaviour
     [SerializeField]
     Toggle toggleScreen;
 
-
-
-    private bool isMenuEnabled = true;
-
+    [SerializeField]
+    List<GameObject> boxes;
 
     // Start is called before the first frame update
     void Start()
     {
-  
-            canvas.enabled = false;
-        
+        hideAll();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            showMenu();
-        }
-
-        if (!isMenuEnabled)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
-
-
         toggleStuff();
-
-        //Debug.Log(Time.timeScale);
-
     }
 
-    public void showMenu()
+    public void startGame()
     {
-        canvas.enabled = isMenuEnabled;
-        isMenuEnabled = !isMenuEnabled;
-        hideAll();
+        SceneManager.LoadScene("1stLevel");
+    }
+
+    public void loadSave()
+    {
+        //Save script needed
+    }
+
+    public void quitGame()
+    {
+        Application.Quit();
     }
 
     public void showOptions()
     {
-
-        hideAll();
         boxes.Where(x => x.name == "Options").First().SetActive(true);
-
-  
-    }
-
-    public void showSave()
-    {
-
-        hideAll();
-        boxes.Where(x => x.name == "ConfirmSave").First().SetActive(true);
-
-    }
-
-    public void showQuit()
-    {
-
-        hideAll();
-        boxes.Where(x => x.name == "QuitOptions").First().SetActive(true);
-
     }
 
     public void toggleStuff()
@@ -108,7 +67,7 @@ public class optionsMenuScript : MonoBehaviour
         {
             toggleScreen.GetComponent<Image>().color = new Color(55, 23, 10);// Hex code is 552310
             Screen.fullScreen = true;
-          
+
         }
         else
         {
@@ -127,17 +86,4 @@ public class optionsMenuScript : MonoBehaviour
             w.SetActive(false);
         }
     }
-
-
-    public void QuitMain()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
-    public void QuitApp()
-    {
-        Application.Quit();
-    }
-   
-
 }

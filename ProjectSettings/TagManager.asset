@@ -11,6 +11,7 @@ TagManager:
   - Item5
   - Item6
   - Item7
+  - MainMenuPanel
   layers:
   - Default
   - TransparentFX

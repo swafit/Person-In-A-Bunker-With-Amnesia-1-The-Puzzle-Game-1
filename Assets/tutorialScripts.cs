@@ -70,8 +70,6 @@ public class tutorialScripts : MonoBehaviour
         
     }
 
-   
-
-
+  
 
 }
