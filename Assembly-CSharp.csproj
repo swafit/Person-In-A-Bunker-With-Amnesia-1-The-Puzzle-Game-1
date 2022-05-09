@@ -61,14 +61,17 @@
     <Compile Include="Assets\level1ManagerScript.cs" />
     <Compile Include="Assets\pressurePlateScript.cs" />
     <Compile Include="Assets\wireGenScript.cs" />
+    <Compile Include="Assets\mainMenuScript.cs" />
     <Compile Include="Assets\level2ManagerScript.cs" />
     <Compile Include="Assets\playerInfo.cs" />
     <Compile Include="Assets\movePlayer.cs" />
     <Compile Include="Assets\cableGenScript.cs" />
     <Compile Include="Assets\circuitGenScript.cs" />
     <Compile Include="Assets\optionsMenuScript.cs" />
+    <Compile Include="Assets\level3Manager.cs" />
     <Compile Include="Assets\addingItemScirpt.cs" />
-    <Compile Include="Assets\mainMenuScript.cs" />
+    <Compile Include="Assets\buttonInteractScript.cs" />
+    <Compile Include="Assets\lvl3Finished.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

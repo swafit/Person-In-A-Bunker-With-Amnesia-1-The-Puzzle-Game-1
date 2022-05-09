@@ -12,6 +12,10 @@ TagManager:
   - Item6
   - Item7
   - MainMenuPanel
+  - SimonButton1
+  - SimonButton2
+  - SimonButton3
+  - SimonButton4
   layers:
   - Default
   - TransparentFX
