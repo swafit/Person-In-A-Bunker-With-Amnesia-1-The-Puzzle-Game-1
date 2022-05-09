@@ -13,7 +13,6 @@ public class buttonInteractScript : MonoBehaviour
     [HideInInspector]
     public static string currentChoice, lastChoice;
 
-    // Start is called before the first frame update
     void Start()
     {
         isFailed = true;
@@ -22,7 +21,6 @@ public class buttonInteractScript : MonoBehaviour
         lastChoice = currentChoice;
     }
 
-    // Update is called once per frame
     void Update()
     {
     
