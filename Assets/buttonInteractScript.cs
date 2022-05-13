@@ -7,7 +7,7 @@ public class buttonInteractScript : MonoBehaviour
 
     public static bool isFailed { get; set; }
     public static int current { get; set; }
-   
+    public static bool isPressed { get; set; }
 
 
     [HideInInspector]
@@ -25,23 +25,34 @@ public class buttonInteractScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+        
     }
 
+    //Used to change the current player choice
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (level3Manager.sequenceDone)
-        {   
+        {
+
             currentChoice = this.gameObject.tag;
-            current++;
-           
+            
         }   
                
     }
 
+    //Used to increment current player choice number
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (current < 4 && !isFailed)
+        {
+            current++;
+            lastChoice = currentChoice;
+            Debug.Log(current);
+        }
+        
+   
+    }
 
-
-    
 
 }

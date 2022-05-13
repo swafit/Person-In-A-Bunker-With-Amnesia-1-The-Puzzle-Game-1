@@ -20,6 +20,7 @@ public class lvl3Finished : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         SceneManager.LoadScene("EndGame");
     }
 

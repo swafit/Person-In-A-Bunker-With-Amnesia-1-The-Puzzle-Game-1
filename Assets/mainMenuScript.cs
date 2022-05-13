@@ -31,7 +31,7 @@ public class mainMenuScript : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("1stLevel");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void loadSave()

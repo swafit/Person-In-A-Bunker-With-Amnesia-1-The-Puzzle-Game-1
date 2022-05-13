@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 
 public class level3Manager : MonoBehaviour
@@ -10,7 +12,7 @@ public class level3Manager : MonoBehaviour
     [SerializeField]
     public List<GameObject> simonButtons;
     public static bool sequenceDone = true;
-
+    public static bool isPassed = false;
    
 
     // Start is called before the first frame update
@@ -23,6 +25,7 @@ public class level3Manager : MonoBehaviour
     void Update()
     {
      
+        //Starts a new iteration if the player failed
         if (buttonInteractScript.isFailed && sequenceDone)
         {
             sequenceDone = false;
@@ -32,13 +35,24 @@ public class level3Manager : MonoBehaviour
           
         }
 
-        if (buttonInteractScript.currentChoice != simonButtons[buttonInteractScript.current].name && buttonInteractScript.currentChoice != "NoChoice")
-        {
-            buttonInteractScript.isFailed = true;
-            buttonInteractScript.currentChoice = "NoChoice";
-            buttonInteractScript.current = 0;
+        //If the current choice is not -1 than check if the player has failed the simon says iteration or not
+        if (buttonInteractScript.current > -1 && buttonInteractScript.current < 4) {
+            if (buttonInteractScript.currentChoice != simonButtons[buttonInteractScript.current].name && buttonInteractScript.currentChoice != buttonInteractScript.lastChoice && buttonInteractScript.currentChoice != "NoChoice")
+            {
+                buttonInteractScript.isFailed = true;
+                buttonInteractScript.currentChoice = "NoChoice";
+
+                //Set to negative 1 since the "current" integer will increase by 1 after player leaves the trigger area therefore -1 -> 0, instead of 0 -> 1
+                buttonInteractScript.current = -1;
+            }
+
         }
-       
+
+        if (buttonInteractScript.current == 4)
+        {
+            isPassed = true;
+        }
+
 
     }
 
@@ -109,6 +123,15 @@ public class level3Manager : MonoBehaviour
         }
 
 
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isPassed)
+        {
+            SceneManager.LoadScene("EndGame");
+        }
     }
 
 }
