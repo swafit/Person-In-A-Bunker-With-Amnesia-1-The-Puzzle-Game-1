@@ -6,8 +6,15 @@ using UnityEngine.SceneManagement;
 public class level1ManagerScript : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    [SerializeField]
+    GameObject camera;
+    AudioSource source;
+
+
     void Start()
     {
+        source = camera.GetComponent<AudioSource>();
         
     }
 
@@ -24,5 +31,10 @@ public class level1ManagerScript : MonoBehaviour
         {
             SceneManager.LoadScene("2ndLevel");
         }
+        else
+        {
+            source.PlayOneShot(source.clip, .4f);
+        }
+       
     }
 }

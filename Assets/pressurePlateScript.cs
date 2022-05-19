@@ -26,6 +26,7 @@ public class pressurePlateScript : MonoBehaviour
             //Make sure we dont go into negative numbers
             if (currentTime <= 0)
             {
+                playerInfo.Health--;
                 ifPressed = false;
                 currentTime = 10;
 
@@ -39,8 +40,8 @@ public class pressurePlateScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)//player collide with pressurePlate
     {
       
-     ifPressed = true;
-
+         ifPressed = true;
+            gameObject.GetComponent<AudioSource>().PlayOneShot(gameObject.GetComponent<AudioSource>().clip, .4f);
     }
 
 

@@ -31,7 +31,7 @@ public class wireGenScript : MonoBehaviour
         {
             Debug.Log("Item Added");
             inventoryManager.item4 = true;
-            Destroy(this.transform.gameObject);
+           
         }
     }
 

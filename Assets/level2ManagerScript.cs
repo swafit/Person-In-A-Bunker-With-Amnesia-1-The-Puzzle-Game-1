@@ -30,6 +30,10 @@ public class level2ManagerScript : MonoBehaviour
         {
             SceneManager.LoadScene("FinalLevel");
         }
+        else
+        {
+            playerInfo.Health--;
+        }
     }
 
 }

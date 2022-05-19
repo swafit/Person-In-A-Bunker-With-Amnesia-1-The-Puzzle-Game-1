@@ -31,7 +31,7 @@ public class circuitGenScript : MonoBehaviour
         {
             Debug.Log("Item Added");
             inventoryManager.item3 = true;
-            Destroy(this.transform.gameObject);
+           
         }
     }
 

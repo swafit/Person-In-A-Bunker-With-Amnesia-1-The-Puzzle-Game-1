@@ -44,6 +44,7 @@ public class level3Manager : MonoBehaviour
 
                 //Set to negative 1 since the "current" integer will increase by 1 after player leaves the trigger area therefore -1 -> 0, instead of 0 -> 1
                 buttonInteractScript.current = -1;
+                playerInfo.Health--;
             }
 
         }

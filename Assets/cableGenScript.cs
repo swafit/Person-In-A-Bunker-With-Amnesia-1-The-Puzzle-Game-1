@@ -20,6 +20,9 @@ public class cableGenScript : MonoBehaviour
                 level2ManagerScript.checkGenWorking++;
                 isCableUsed = false;
             }
+
+            
+
         }
 
     }
@@ -28,9 +31,9 @@ public class cableGenScript : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            Debug.Log("Item Added");
+           
             inventoryManager.item2 = true;
-            Destroy(this.transform.gameObject);
+            
         }
     }
 

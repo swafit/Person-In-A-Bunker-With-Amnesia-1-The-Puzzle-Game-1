@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class inventoryManager : MonoBehaviour
 {
 
-
+    //Not in a list because it causes static and null related problems
     public bool[] items = new bool[7];
     public static bool item1 { get; set; }
     public static bool item2 { get; set; }
@@ -93,7 +93,6 @@ public class inventoryManager : MonoBehaviour
         if (item1 && playerInfo.Health < 3)
         {
             playerInfo.Health++;
-            Debug.Log(playerInfo.Health);
             item1 = false;
         }
         
@@ -101,13 +100,16 @@ public class inventoryManager : MonoBehaviour
     
     public void CableUse()
     {
+        playerInfo.Health--;
+        //To use object
         if (item2 && cableGenScript.inTriggerObj == "Player")
         {
             cableGenScript.isCableUsed = true;
             //Debug.Log(cableGenScript.isCableUsed);
             item2 = false;
         }
-       
+
+
     }
 
     public void CircuitUse()

@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class addingItemScirpt : MonoBehaviour
 {
-    float currentTime = 0f;
-    float startingTime = 0f;
+
 
     [SerializeField] 
     Text addedText;
@@ -14,18 +13,13 @@ public class addingItemScirpt : MonoBehaviour
 
     void Start()
     {
-        currentTime = startingTime;
+        
     }
 
    
     void Update()
     {
-        currentTime -= 1 * Time.deltaTime;
-
-        if (currentTime == 0f)
-        {
-            addedText.text = "";
-        }
+        
 
     }
 
@@ -33,11 +27,22 @@ public class addingItemScirpt : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            startingTime = 3f;
+
+           
             addedText.text = "Item Added: " + gameObject.name.ToString();
+            this.gameObject.transform.position = new Vector3(-100,-100,100);
+            StartCoroutine(disableAddedText());
         }
+        
     }
 
  
+    IEnumerator disableAddedText()
+    {
+       
+        yield return new WaitForSeconds(1f);
+        addedText.text = "";
+        Destroy(this.gameObject);
+    }
 
 }
