@@ -40,7 +40,11 @@ public class cableGenScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (inventoryManager.item2)
+        {
+            Destroy(gameObject);
+        }
+        
     }
 
     // Update is called once per frame

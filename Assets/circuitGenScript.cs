@@ -38,7 +38,10 @@ public class circuitGenScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (inventoryManager.item3)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

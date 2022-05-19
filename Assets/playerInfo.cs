@@ -1,7 +1,9 @@
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class playerInfo : MonoBehaviour
 {
@@ -27,7 +29,7 @@ public class playerInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(Inventory[0]);
         if (lastHealth > Health)
         {
             IsDamaged = true;
@@ -43,4 +45,15 @@ public class playerInfo : MonoBehaviour
         }
 
     }
+}
+[Serializable]
+public class saveInfo{
+
+    public List<bool> inv;
+    public int lev;
+    public int heal;
+    public bool mute;
+    public bool full;
+    public float vol;
+
 }

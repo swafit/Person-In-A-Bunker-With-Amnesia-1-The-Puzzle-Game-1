@@ -28,7 +28,13 @@ public class inventoryManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-   
+        item1 = playerInfo.Inventory[0];
+        item2 = playerInfo.Inventory[1];
+        item3 = playerInfo.Inventory[2];
+        item4 = playerInfo.Inventory[3];
+        item5 = playerInfo.Inventory[4];
+        item6 = playerInfo.Inventory[5];
+        item7 = playerInfo.Inventory[6];
         inventoryCanvas.enabled = false;
     }
 

@@ -16,6 +16,7 @@ public class level2ManagerScript : MonoBehaviour
     void Start()
     {
         
+        playerInfo.LevelNum = 2;
     }
 
     // Update is called once per frame

@@ -18,7 +18,7 @@ public class level3Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        playerInfo.LevelNum = 3;
     }
 
     // Update is called once per frame

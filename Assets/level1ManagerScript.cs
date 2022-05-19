@@ -15,6 +15,7 @@ public class level1ManagerScript : MonoBehaviour
     void Start()
     {
         source = camera.GetComponent<AudioSource>();
+        playerInfo.LevelNum = 1;
         
     }
 
