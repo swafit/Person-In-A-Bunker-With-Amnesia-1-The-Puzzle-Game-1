@@ -30,6 +30,7 @@ public class level2ManagerScript : MonoBehaviour
         if (checkGenWorking >= 3)
         {
             SceneManager.LoadScene("FinalLevel");
+            saveScript.isLoaded = true;
         }
         else
         {

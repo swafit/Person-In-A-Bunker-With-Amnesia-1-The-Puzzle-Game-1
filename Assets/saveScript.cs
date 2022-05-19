@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class saveScript : MonoBehaviour
 {
     public string saveFile;
-
+    public static bool isLoaded = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +41,7 @@ public class saveScript : MonoBehaviour
     }
     public void toLoad()
     {
+        isLoaded = true;
         playerInfo pi = new playerInfo();
 
         if (File.Exists(saveFile))

@@ -9802,6 +9802,7 @@ GameObject:
   - component: {fileID: 2117119884}
   - component: {fileID: 2117119883}
   - component: {fileID: 2117119882}
+  - component: {fileID: 2117119885}
   m_Layer: 0
   m_Name: UI Box 1
   m_TagString: Untagged
@@ -9916,3 +9917,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117119880}
   m_CullTransparentMesh: 1
+--- !u!114 &2117119885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117119880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461a701dfae04834a88f374bfe44a44b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 934922288}
+  mute: {fileID: 774942793}
+  fullscreen: {fileID: 869841550}

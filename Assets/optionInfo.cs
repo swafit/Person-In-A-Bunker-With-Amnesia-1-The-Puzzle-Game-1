@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class optionInfo : MonoBehaviour
 {
@@ -17,9 +18,14 @@ public class optionInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        volume.value = volumeVal;
-        mute.isOn = muteVal;
-        fullscreen.isOn = fullscreenVal;
+        volume.value = 0.50f;
+
+        if (saveScript.isLoaded)
+        {
+            volume.value = volumeVal;
+            mute.isOn = muteVal;
+            fullscreen.isOn = fullscreenVal;
+        }
     }
 
     // Update is called once per frame

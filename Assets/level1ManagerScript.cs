@@ -31,6 +31,7 @@ public class level1ManagerScript : MonoBehaviour
         if (pressurePlateScript.ifPressed)
         {
             SceneManager.LoadScene("2ndLevel");
+            saveScript.isLoaded = true;
         }
         else
         {

@@ -14,11 +14,13 @@ public class movePlayer : MonoBehaviour
         audio = this.gameObject.GetComponent<AudioSource>();
         audio.loop = true;
         audio.Play();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        audio.volume = optionsMenuScript.gameVol;
     }
 
     private void FixedUpdate()

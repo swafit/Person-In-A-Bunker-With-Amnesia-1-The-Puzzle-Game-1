@@ -18,7 +18,7 @@ public class playerSound : MonoBehaviour
         
         if (playerInfo.IsDamaged && audioSource.clip.name == "Ruffle")
         {
-            audioSource.PlayOneShot(audioSource.clip, .2f);
+            audioSource.PlayOneShot(audioSource.clip, optionsMenuScript.gameVol);
             playerInfo.IsDamaged = false;
         }
     }

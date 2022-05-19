@@ -21,7 +21,7 @@ public class optionsMenuScript : MonoBehaviour
     [SerializeField]
     Toggle toggleScreen;
 
-
+    public static float gameVol { get; set; }
 
     private bool isMenuEnabled = true;
 
@@ -37,6 +37,15 @@ public class optionsMenuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!optionInfo.muteVal)
+        {
+            gameVol = optionInfo.volumeVal;
+        }
+        else
+        {
+            gameVol = 0;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             showMenu();
